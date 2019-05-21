@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="Catagory">
+        <item>Diary </item>
+        <item> Meat</item>
+        <item>Vegtabels</item>
+        <item>Household</item>
+        <item>Dry_goods</item>
+    </string-array>
+</resources>
