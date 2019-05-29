@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -26,6 +27,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String createTable = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COL1 +" TEXT)";
         db.execSQL(createTable);
+
     }
 
     @Override

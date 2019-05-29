@@ -7,17 +7,17 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button databaseBtn;
-    private Button firebaseBtn;
+    private Button DatabaseBtn;
+    private Button FirebaseBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        databaseBtn = (Button) findViewById(R.id.databaseBtn);
-        firebaseBtn = (Button) findViewById(R.id.firebaseBtn);
+        DatabaseBtn = (Button) findViewById(R.id.databaseBtn);
+        FirebaseBtn = (Button) findViewById(R.id.firebaseBtn);
 
-        databaseBtn.setOnClickListener(new View.OnClickListener() {
+        DatabaseBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent1 = new Intent(MainActivity.this, SQLDataBaseActivity.class);
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-       firebaseBtn.setOnClickListener(new View.OnClickListener() {
+       FirebaseBtn.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
                Intent i = new Intent(MainActivity.this, FireBaseActivity.class);

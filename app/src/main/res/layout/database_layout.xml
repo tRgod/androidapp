@@ -27,10 +27,10 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/AddButton"
+            android:id="@+id/addBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
             android:text="Add" />
 
         <Button
@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="130dp"
-            android:layout_toRightOf="@+id/AddButton"
+            android:layout_toRightOf="@+id/addBtn"
             android:text="View Data"/>
 
     </RelativeLayout>
