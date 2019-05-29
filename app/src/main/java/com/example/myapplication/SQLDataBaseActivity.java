@@ -1,7 +1,6 @@
 package com.example.myapplication;
 
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,11 +21,9 @@ public class SQLDataBaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         editText = (EditText) findViewById(R.id.ItemName);
-        btnAdd = (Button) findViewById(R.id.AddButton);
+        btnAdd = (Button) findViewById(R.id.addBtn);
         btnViewData = (Button) findViewById(R.id.ViewDataButton);
         mDatabaseHelper = new DatabaseHelper(this);
-
-        Intent recievedIntet = getIntent();
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
