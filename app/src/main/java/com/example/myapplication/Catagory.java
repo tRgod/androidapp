@@ -45,7 +45,7 @@ public class Catagory {
         }
 
         public String getDiscription() {
-            return ("Discription: " + Discription);
+            return ("Description: " + Discription);
         }
 
         public void setDiscription(String discription) {
