@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
     DatabaseHelper mDatabaseHelper;
-    private Button btnAdd, btnViewData, firebasebtn;
+    private Button btnAdd, btnViewData, firebasebtn, btnVieShop;
     private EditText editText;
 
     @Override
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         editText = (EditText) findViewById(R.id.ItemName);
         btnAdd = (Button) findViewById(R.id.AddButton);
         btnViewData = (Button) findViewById(R.id.ViewDataButton);
+        btnVieShop=(Button)  findViewById(R.id.Fragmentbtn);
         mDatabaseHelper = new DatabaseHelper(this);
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +40,13 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
+        btnVieShop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(intent);
+            }
+        });
         btnViewData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -29,7 +29,7 @@ public class FireBaseActivity extends AppCompatActivity implements AdapterView.O
     private String cat1;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.firebase_layout);
 
@@ -41,7 +41,7 @@ public class FireBaseActivity extends AppCompatActivity implements AdapterView.O
         mPriceField.setOnClickListener(this);
         mDecription=(EditText) findViewById(R.id.description);
         mPriceField.setOnClickListener(this);
-        Spinner spinner=findViewById(R.id.spinner);
+        final Spinner spinner=findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter= ArrayAdapter.createFromResource(this, R.array.Catagory,android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
@@ -60,11 +60,13 @@ public class FireBaseActivity extends AppCompatActivity implements AdapterView.O
                 // asign som valuse to that
 
                 HashMap<String,String> dataMap=new HashMap<String, String>();
+                dataMap.put("Catagory",cat1);
+                dataMap.put("Name",name);
                 dataMap.put("Price",price);
-                dataMap.put("decription",decription);
+                dataMap.put("Discription",decription);
 
 
-                mDatabase.child("Catagory").child(cat1).child(name).setValue(dataMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+                mDatabase.child("Catagory").child(name).setValue(dataMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if(task.isSuccessful())

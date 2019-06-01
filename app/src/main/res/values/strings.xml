@@ -8,4 +8,12 @@
         <item>Household</item>
         <item>Dry_goods</item>
     </string-array>
+    <string name="Catagory"> Catagory: </string>
+    <string name="Name"> Name: </string>
+    <string name="Price"> Price: </string>
+    <string name="Discription"> Discription: </string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

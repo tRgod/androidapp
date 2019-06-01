@@ -49,6 +49,20 @@
             android:layout_toRightOf="@+id/AddButton"
             android:text="View Data" />
 
+        <Button
+            android:id="@+id/Fragmentbtn"
+            android:layout_width="147dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/ViewDataButton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@+id/fireBtn"
+            android:text="View Shop inventory" />
+
     </RelativeLayout>
 
 </RelativeLayout>
