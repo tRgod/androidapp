@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:weightSum="1"
@@ -8,40 +10,41 @@
 
     <LinearLayout
         android:layout_width="393dp"
-        android:layout_height="108dp"
+        android:layout_height="150dp"
         android:layout_weight="1"
         android:orientation="vertical">
+
         <TextView
+            android:id="@+id/Catagory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Catagory"
             android:textSize="20dp"
-            android:textStyle="bold"
-            android:id="@+id/Catagory"/>
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Name"
             android:textSize="20dp"
-            android:textStyle="bold"
-            android:id="@+id/Name"/>
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/Price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Price"
             android:textSize="20dp"
-            android:textStyle="bold"
-            android:id="@+id/Price"/>
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/Discription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/Discription"
             android:textSize="20dp"
-            android:textStyle="bold"
-            android:id="@+id/Discription"
-            android:text="@string/Discription"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 </LinearLayout>

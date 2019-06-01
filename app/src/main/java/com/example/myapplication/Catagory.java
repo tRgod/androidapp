@@ -21,7 +21,7 @@ public class Catagory {
 
 
         public String getCatagory() {
-            return Catagory;
+            return ("Category: " + Catagory);
         }
 
         public void setCatagory(String catagory) {
@@ -29,7 +29,7 @@ public class Catagory {
         }
 
         public String getName() {
-            return Name;
+            return ("Name: " + Name);
         }
 
         public void setName(String name) {
@@ -37,7 +37,7 @@ public class Catagory {
         }
 
         public String getPrice() {
-            return Price;
+            return ("Price: " + Price);
         }
 
         public void setPrice(String price) {
@@ -45,7 +45,7 @@ public class Catagory {
         }
 
         public String getDiscription() {
-            return Discription;
+            return ("Discription: " + Discription);
         }
 
         public void setDiscription(String discription) {
